@@ -2,8 +2,10 @@
 public class Calculator {
 
 public int add(String input) {
+	
+	    final String delimiter = ",|\n";
 		
-		String[] numbers = input.split(",");
+		String[] numbers = input.split(delimiter);
 		
 		if(input.isEmpty()) {
 			return 0;
