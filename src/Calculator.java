@@ -8,7 +8,13 @@ public int add(String input) {
 		if(input.isEmpty()) {
 			return 0;
 		}
-		return Integer.parseInt(input);
+		if(input.length() == 1) {
+			return Integer.parseInt(input);
+		}
+		else {
+			return Integer.parseInt(numbers[0]) + Integer.parseInt(numbers[1]);
+		} 
+		
 	}
 
 
