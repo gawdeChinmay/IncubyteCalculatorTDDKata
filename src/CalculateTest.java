@@ -26,4 +26,16 @@ class CalculateTest {
 		calculator = new Calculator();
 		assertEquals(calculator.add("1,2"), 3);
 	}
+	
+	@Test
+	 void twoNumbersNewLineDelimitedReturnSum() {
+		calculator = new Calculator();
+		assertEquals(calculator.add("1\n2"), 3);
+	}
+	
+	@Test(expectedExceptions = Exception.class)
+	 void negativeInputReturnsException() {
+		calculator = new Calculator();
+		calculator.add("-1");
+	}
 }
