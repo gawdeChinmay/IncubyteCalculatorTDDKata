@@ -8,11 +8,6 @@ class CalculateTest {
 	
 	private Calculator calculator;
 	
-//	@BeforeAll
-//	public void init() {
-//		calculator = new Calculator();
-//	}
-
 	
 	@Test
 	 void emptyStringReturnZero() {
@@ -26,5 +21,9 @@ class CalculateTest {
 		assertEquals(calculator.add("1"), 1);
 	}
 
-	
+	@Test
+	 void twoNumbersCommaDelimitedReturnSum() {
+		calculator = new Calculator();
+		assertEquals(calculator.add("1,2"), 3);
+	}
 }

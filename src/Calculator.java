@@ -1,7 +1,7 @@
 
 public class Calculator {
 
-	public int add(String input) {
+public int add(String input) {
 		
 		String[] numbers = input.split(",");
 		
@@ -10,5 +10,6 @@ public class Calculator {
 		}
 		return Integer.parseInt(input);
 	}
+
 
 }
